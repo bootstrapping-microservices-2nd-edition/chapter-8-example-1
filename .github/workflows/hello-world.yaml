@@ -5,12 +5,18 @@
 name: Hello world
 
 on:
-  # Triggers on push to any branch.
-  push:
+  #
+  # Triggers this workflow on push to the main branch of this code repository.
+  #
+  push: 
+    branches:
+      - main
 
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
-
+  #
+  # Allows deployment to be invoked manually through the GitHub Actions user interface.
+  #
+  workflow_dispatch: 
+  
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "hello-world"
